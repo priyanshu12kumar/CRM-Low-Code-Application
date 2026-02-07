@@ -12,7 +12,7 @@ const SubmitFormButton = () => {
   const selectedElementsList : fieldType[] = useFormBuilder().getSelectedFieldList()[0] ;
   const {formDetails} = useFormDetails() ;
   const formJson = { formDetails , formData: selectedElementsList } as JsonDataType ;
-  const endpoint = "http://127.0.0.1:8000/save-form" ;
+  const endpoint = "https://crm-low-code-application.onrender.com/save-form" ;
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
